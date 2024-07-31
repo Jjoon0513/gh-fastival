@@ -1,0 +1,88 @@
+body{
+    text-align: center;
+    background-color: aqua;
+    background-image:  url('https://static.vecteezy.com/system/resources/previews/002/368/820/original/beach-landscape-seashore-with-sea-star-palms-sea-pebbles-and-tropical-plants-illustration-vector.jpg');
+}
+
+#maintitle{
+    margin: 0;
+    font-size: 70px;
+    color: white;
+    display: inline-block; 
+}
+
+#finansir{
+    display: inline-block;
+    position: relative;
+    transform: translate(190px, -100px) rotate(20deg);
+
+}
+
+.nanum-pen-script-regular {
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#titleborder{
+    background-color: rgb(238, 193, 68);
+    border-radius: 30px;
+    width: 500px;
+    display: inline-block; 
+    box-sizing: border-box;
+}
+
+yellow{
+    color: yellow;
+}
+green{
+    color: greenyellow;
+}
+red{
+    color: rgb(255, 92, 92);
+}
+
+#keywordquesstext{
+    margin: -200px;
+    font-size: 100px;
+}
+
+#buttens {
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 100px; /* 버튼 간의 간격 */
+    padding: 40px; /* 버튼 주위의 패딩 */
+    transition-duration: 1s;
+}
+
+button {
+    padding: 10px 20px; /* 버튼 안의 패딩 */
+    font-size: 80px; /* 글자 크기 */
+    border: none;
+    border-radius: 5px; /* 버튼 모서리 둥글게 */
+    background-color: #4CAF50; /* 버튼 배경색 */
+    color: white; /* 글자 색 */
+    outline: solid black;
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#this {
+    transform: translate(0px, 300px);
+    margin: 0;
+    font-size: 100px;
+    transition-duration: 1s;
+}
+
+#this1 {
+    transform: translate(0px, 300px);
+    margin: 0;
+    font-size: 30px;
+}
+
+#this3 {
+    transition-duration: 1s;
+}
