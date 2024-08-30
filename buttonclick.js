@@ -2,31 +2,33 @@ const choosethis = document.getElementById('this');
 const buttens = document.getElementById('buttens');
 const this3 = document.getElementById('this3');
 const finansir = document.getElementById('finansir');
+var b = []
+var a = 0
+let random = 57
 
+// var shown = false
+// window.onkeydown = (e) => console.log(e)
 
-function getRandomInt() {
-    return Math.floor(Math.random() * 30) + 1;
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max) + 1;
 }
 
-function sea(){
-    buttens.style.display = "none"
-    a = getRandomInt()
-    choosethis.innerText = "바다 문제 " + String(a) + "번 주세요!"
-    this3.style.display = "block"
-}
 
-function culturehome() {
-    buttens.style.display = "none"
-    a = getRandomInt()
-    choosethis.innerText = "문화의집 문제 " + String(a) + "번 주세요!"
-    this3.style.display = "block"
-}
 
 function people() {
     buttens.style.display = "none"
-    a = getRandomInt()
-    choosethis.innerText = "인물 캐릭터 문제 " + String(a) + "번 주세요!"
+    a = getRandomInt(random)
+    if (b.length >= random) {
+        b = []
+    }
+    while (b.includes(a)){
+        a = getRandomInt(random)    
+    }
+    b.push(a)
+    
+    choosethis.innerHTML = `<img src='image/charactor/image (${a}).jpg' class='showimages'>`
     this3.style.display = "block"
+    console.log(b)
 }
 
 function reset(){
